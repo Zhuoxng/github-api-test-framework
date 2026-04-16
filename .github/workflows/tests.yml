@@ -19,4 +19,4 @@ jobs:
           echo "GITHUB_TOKEN=${{ secrets.GH_API_TOKEN }}" >> .env
 
       - name: Run Pytest in Docker
-        run: docker-compose up --build --exit-code-from qa-suite
+        run: docker compose up --build --exit-code-from qa-suite

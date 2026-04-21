@@ -8,5 +8,4 @@ def get_repo_count(username: str) -> int:
         data = response.json()
         return data.get("public_repos", 0)
     
-    # If the user doesn't exist or the API crashes, return -1
     return -1

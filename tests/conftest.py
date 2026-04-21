@@ -7,7 +7,6 @@ load_dotenv()
 
 @pytest.fixture(scope="session")
 def github_session():
-    """Creates a reusable, authenticated HTTP session for the GitHub API."""
     token = os.getenv("GITHUB_TOKEN")
     
     if not token:

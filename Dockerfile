@@ -4,4 +4,4 @@ COPY requirements-test.txt .
 RUN pip install --no-cache-dir -r requirements-test.txt
 COPY src/ src/
 COPY tests/ tests/
-CMD ["pytest", "-v"]
+CMD ["pytest", "-v", "--html=reports/report.html", "--self-contained-html"]

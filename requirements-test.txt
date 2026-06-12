@@ -1,0 +1,7 @@
+pytest
+pytest-cov
+requests
+python-dotenv
+pytest-asyncio
+httpx
+pytest-html
